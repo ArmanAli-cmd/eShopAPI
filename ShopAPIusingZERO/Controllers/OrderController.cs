@@ -34,13 +34,20 @@ namespace ShopAPIusingZERO.Controllers
         }
 
 
-        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetOrderById(int id)
+        [HttpGet("{userId}")]
+        public async Task<IActionResult> GetOrderByUserId(int userId)
         {
-            var order = await _orderRepository.GetByIdAsync(id);
-            return Ok(order);
+            var orders = await _orderRepository.ListAllAsync();
+            List<Order> userOrder = new();
+            foreach(var order in orders)
+            {
+                if (order.UserId == userId)
+                {
+                    userOrder.Add(order);
+                }
+            }
+            if(userOrder.Count == 0) return NotFound("Not found any order with user id"+ userId);
+            return Ok(userOrder);
         }
 
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
@@ -57,7 +64,7 @@ namespace ShopAPIusingZERO.Controllers
                 //Get all Items from cart by userId
                 var cartItem = await _itemRepository.ListAsync(new CartItemsSpecification(model.UserID));
                 //if cartItem is null
-                if(cartItem==null) return NotFound("Cart is Empty");
+                if(cartItem.Count==0) return NotFound("Cart is Empty");
 
                 List<OrderItem> items = new();
                 foreach(var cart in cartItem)
