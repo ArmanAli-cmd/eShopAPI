@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj": {}
+    "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj": {
+    "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj",
+        "projectUniqueName": "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj",
         "projectName": "ShopAPIusingZERO",
-        "projectPath": "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj",
+        "projectPath": "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj",
         "packagesPath": "C:\\Users\\Pc3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\ShopAPIusingZERO\\obj\\",
+        "outputPath": "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\ShopAPIusingZERO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\NuGet.Config",
+          "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\NuGet.Config",
           "C:\\Users\\Pc3\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -5,7 +5,8 @@ namespace ShopAPIusingZERO.Domain.OrderAggregate
 {
     public class OrderItem : Entity
     {
-        public int OrderItemId { get; set; }
+        public int OrderItemId { get; private set; }
+        public int OrderId { get; private set; }
         public int ProductId { get; private set; }
         public String ProductName { get; private set; }
         public int Quantity { get; private set;}

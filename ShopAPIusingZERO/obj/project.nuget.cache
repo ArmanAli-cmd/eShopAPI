@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BMU6E3TEYSGFZb74VMHpiP2QnphvXBusVmm/4SsHBEMRy3Nuan++b8svaDx6MaHk5WbX44gp3e1CjJRddhdyHw==",
+  "dgSpecHash": "M4wwp58m1GuJqeEoxMfswT/55tBxGgEBquK5L8wqS68FS336ywF5Yg3e7cjLVEC25qvAq4vnAMX3ehk79rT7bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pc3\\Downloads\\eShopAPIExamples-master\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj",
+  "projectFilePath": "C:\\Users\\Pc3\\Source\\Repos\\eShopAPI\\ShopAPIusingZERO\\ShopAPIusingZERO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc3\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Pc3\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
