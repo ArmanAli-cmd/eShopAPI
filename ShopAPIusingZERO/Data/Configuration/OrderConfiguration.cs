@@ -16,6 +16,14 @@ namespace ShopAPIusingZERO.Data.Configuration
 
             builder.Property(x => x.TotalQuantity);
             builder.Property(x => x.TotalPrice);
+            builder.OwnsMany(m => m.items, b => {
+                b.HasKey(x => x.OrderItemId);
+                b.WithOwner().HasForeignKey(m => m.OrderId);
+                b.HasOne<Product>().WithMany().HasForeignKey(x => x.ProductId);
+                b.Property(x => x.ProductName);
+                b.Property(m => m.Quantity);
+                b.Property(m => m.Price);
+            });
         }
     }
 }
