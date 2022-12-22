@@ -33,6 +33,13 @@ namespace ShopAPIusingZERO.Controllers
             return Ok(order);
         }
 
+        [HttpGet("{OrderId}")]
+        public async Task<IActionResult> GetOrderById(int OrderId)
+        {
+            var order = await _orderRepository.GetByIdAsync(OrderId);
+            if(order == null) return NotFound("Order id doesn't exist");
+            return Ok(order);
+        }
 
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetOrderByUserId(int userId)
